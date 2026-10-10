@@ -13,3 +13,16 @@ Port:
 
 What I learned:
 I learned that I can host a web server using GitHub Codespaces. I also learned how to start a web server using python3 -m http.server 8000 and stop the web server using Ctrl + C in the terminal. I learned that the 200 status code means that the request was successful. I also learned how to add files using the terminal by using the mkdir and touch commands.
+
+# MariaDB Activity 2
+**Name:** YOUR NAME
+**Student ID:** YOUR ID
+**Course/Section:** YOUR COURSE/SECTION
+## Database
+school
+## Tables
+- students
+- courses
+- enrollments
+## What I Learned
+I learned that the primary key uniquely defines each record in a table whereas the foreign key relates different tables, I was able to learn the use of JOIN for combining data from two tables. The SQL queries can be used to select data from the database through the use of SELECT and WHERE.
