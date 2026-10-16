@@ -5,7 +5,7 @@ USE school;
 SHOW TABLES;
 
 --To create enrollments table
-CREATE TABLE IF NOT EXISTS enrollments (
+CREATE TABLE enrollments (
     enrollment_id INT AUTO_INCREMENT PRIMARY KEY,
     student_id INT,
     course_id INT,
