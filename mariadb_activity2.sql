@@ -1,4 +1,4 @@
-`--To access the school database 
+--To access the school database 
 USE school;
 
 --To show all the tables available in school database
