@@ -38,7 +38,7 @@ WHERE course = 'BSIT';
 SELECT * FROM students
 WHERE year_level >= 2;
 
-INSERT INTO students (name, coursem year_level)
+INSERT INTO students (name, course, year_level)
 VALUES ('Collao, John Frank', 'Web Development', 1);
 
 SELECT * FROM students;
