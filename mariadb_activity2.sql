@@ -5,7 +5,7 @@ USE school;
 SHOW TABLES;
 
 --To create enrollments table
-CREATE TABLE enrollments (
+CREATE TABLE IF NOT EXISTS enrollments (
     enrollment_id INT AUTO_INCREMENT PRIMARY KEY,
     student_id INT,
     course_id INT,
@@ -122,6 +122,37 @@ JOIN students
 JOIN courses
     ON enrollments.course_id = courses.course_id
 ORDER BY students.name;
+
+--Add atleast 5 students records
+INSERT INTO students (name, course, year_level)
+VALUES
+('Kacey Sangbaan', 'BSIT', 3),
+('Ivan Dave Mendiola', 'BSIT', 3),
+('Alfred Joseph Baladad', 'BSCS', 2),
+('Jeus Klein Medina', 'BSCS', 2),
+('Mark Collado', 'BSIT', 1),
+('Mark Labiano', 'BSCS', 3),
+('Joshua Froi Santos', 'BSIT', 1);
+
+--Add atleast 5 records
+INSERT INTO students (name, course, year_level)
+VALUES
+('CC6', 'Emerging Technologies', 2),
+('CIT17', 'WEB INFORMATION SYSTEM', 3),
+('SOCSCI103N', 'CONTEMPORARY WORLD', 2),
+('CC17', 'MOBILE APPLICATION DESIGN', 3),
+('CC3', 'OBJECT ORIENTED PROGRAMMING', 3);
+
+--Add atleast 10 enrollments
+INSERT INTO enrollments (student_id, course_id, enrollment_date)
+VALUES
+(5, 4, '2026-10-10'),
+(6, 5, '2026-10-10'),
+(7, 6, '2026-10-10'),
+(8, 7, '2026-10-10'),
+(9, 8, '2026-10-10'),
+(10, 8, '2026-10-10'),
+(11, 8, '2026-10-10');
 
 --Challenge Queries
 --Task 1
